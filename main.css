@@ -503,7 +503,7 @@ footer{
         width: 90%;
     }
     td:first-child{
-        padding: 0px 15px;
+        padding: 0px 8px;
     }
     .banner{
         width: 90%;
@@ -609,7 +609,7 @@ footer{
         padding: 2%;
     }
     .tablediv{
-        width: 100%;
+        width: 98%;
     }
     .MoreCardDiv{
         padding: 2%;
