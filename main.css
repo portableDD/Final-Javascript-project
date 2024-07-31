@@ -220,6 +220,7 @@ h1,h2,h3,h4{
     border-radius: 5px;
 }
 table{
+    max-width: 100%;
     width: 100%;
     background-color: white;
     border-collapse: collapse;
@@ -414,10 +415,15 @@ footer{
     padding: 0px 0px 20px;
 }
 @media screen and (max-width: 767px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     .hero{
         margin: 8% 1.5% 2%;
         flex-direction: column;
         text-align: center;
+        width: 100%;
         /* justify-content: start; */
     }
     .hero1{
@@ -448,11 +454,37 @@ footer{
     .text4 p{
         margin: 0 auto 5%;
     }
+    .cardDiv {
+        margin: 8% 1.5% 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 390px;
+    }
+    .cards p{
+        margin-top: 0;
+    }
+    .partners-hero img{
+        width: 150px;
+        padding: 4% 5%;
+    }
+    .tablediv{
+        width: 90%;
+    }
+    
     .banner{
-        width: 80%;
-        padding: 60px 88px;
+        width: 90%;
+        padding: 20px;
         margin: 8% auto 10%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -470,7 +502,20 @@ footer{
         display: none;
     }
     footer{
-        padding: 72.8px 50px 24px 50px;
+        padding: 72.8px 30px 24px 30px;
+        width: 100%;
+    }
+    .footerImg{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .footerColumns{
+        width: 50%;
+    }
+    .ContactAddressDiv{
+        margin-top: 5%;
+        flex-direction: column;
+        gap: 30px;
     }
     .allrightCont p{
         width: 100%;
