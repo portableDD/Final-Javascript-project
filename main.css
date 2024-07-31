@@ -213,7 +213,6 @@ h1,h2,h3,h4{
     max-width: 1140px;
     width: 80%;
     border: 1px solid #DCDCE080;
-    /* overflow-x: auto; */
     margin: 3% auto 0;
     padding: 3% 0% 5%;
     box-shadow: 15px 30px 40px 0px #40196D12;
@@ -227,17 +226,14 @@ table{
 }
 th{
     text-align: left;
-}
-th,tr{
-    border-bottom:  0.8px solid #DCDCE080;
-    padding: 15px;
-}
-
-th{
     font-size: 19.84px;
     font-weight: 900;
     line-height: 28px;
     color: #40196D;
+}
+th,tr{
+    border-bottom:  0.8px solid #DCDCE080;
+    padding: 2%;
 }
 td{
     font-size: 15.25px;
@@ -464,7 +460,7 @@ footer{
         /* display: none; */
     }
     .helloImg{
-        max-width: 380px;
+        max-width: 350px;
         width: 350px;
         height: 300px;
     }
@@ -501,9 +497,10 @@ footer{
     }
     .tablediv{
         width: 90%;
+         overflow-x: auto;
     }
     td:first-child{
-        padding: 0px 8px;
+        padding: 0px 0px 0px 8px;
     }
     .banner{
         width: 90%;
