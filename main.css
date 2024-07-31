@@ -104,7 +104,7 @@ h1,h2,h3,h4{
     width: 420px;
 }
 .text4 h1{
-    width: 480px;
+  max-width: 480px;
 }
 .FlowCards{
     margin: 10% auto;
@@ -220,7 +220,7 @@ h1,h2,h3,h4{
     border-radius: 5px;
 }
 table{
-    max-width: 100%;
+    /* max-width: 100%; */
     width: 100%;
     background-color: white;
     border-collapse: collapse;
@@ -414,20 +414,27 @@ footer{
     color: #979797;
     padding: 0px 0px 20px;
 }
+
 @media screen and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+    }
     img {
         max-width: 100%;
         height: auto;
     }
     .hero{
-        margin: 8% 1.5% 2%;
+        margin: 8% 1% 2%;
         flex-direction: column;
         text-align: center;
         width: 100%;
         /* justify-content: start; */
     }
     .hero1{
-        margin: 35% 1.5% 2%;
+        margin: 35% 1% 2%;
+        gap: 30px;
         /* flex-wrap: nowrap; */
     }
     .hero-gap{
@@ -437,25 +444,37 @@ footer{
         flex-direction: column-reverse;
         gap: 30px;
     }
-    /* .hero-text{
+    .hero-text{
+        max-width: 80%;
         width: 100%;
-    } */
+    }
     .hero-text p{
         width: 100%;
     }
-    /* .hero1-img{
-        width: 52%;
-    } */
+    .hero-text2 h1{
+        max-width: 350px;
+    }
+    .hero-text2 p{
+        max-width: 350px;
+    }
     .phone-circle{
         max-width: 400px;
         height: 400px;
         /* display: none; */
     }
+    .helloImg{
+        max-width: 380px;
+        height: 300px;
+    }
+    .free-circle{
+        max-width: 350px;
+        height: 300px;
+    }
     .text4 p{
         margin: 0 auto 5%;
     }
     .cardDiv {
-        margin: 8% 1.5% 0;
+        margin: 8% 1% 0;
         justify-content: center;
         width: 100%;
     }
@@ -466,10 +485,13 @@ footer{
         align-items: center;
         gap: 10px;
         width: 100%;
-        max-width: 390px;
+        max-width: 350px;
     }
     .cards p{
         margin-top: 0;
+    }
+    .abbrLogo a{
+        padding: 4% 5%;
     }
     .partners-hero img{
         width: 150px;
@@ -478,7 +500,9 @@ footer{
     .tablediv{
         width: 90%;
     }
-    
+    td:first-child{
+        padding: 0px 15px;
+    }
     .banner{
         width: 90%;
         padding: 20px;
@@ -512,6 +536,10 @@ footer{
     .footerColumns{
         width: 50%;
     }
+    .footerLinkDiv .hero-a img{
+        width: 100px;
+        height: 35px;
+    }
     .ContactAddressDiv{
         margin-top: 5%;
         flex-direction: column;
@@ -521,20 +549,26 @@ footer{
         width: 100%;
     }
 }
+/* @media screen and (max-width: 425px) {
+
+} */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .hero{
-        /* width: 90%; */
         margin: 8% 1.5% 2%;
     }
     .hero1{
+        width: 80%;
         margin: 20% 1.5% 2%;
         flex-wrap: nowrap;
     }
     .hero-text{
         width: 48%;
     }
+    .hero-text p{
+        width: 100%;
+    }
     .hero1-img{
-        width: 52%;
+        width: 48%;
         margin-left: 10%;
     }
     .phone-circle{

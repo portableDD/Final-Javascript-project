@@ -248,6 +248,9 @@ button{
 
 
 @media screen and (max-width: 1023px) {
+    .navContainer{
+        padding: 0px 30px;
+    }
     .navWidth {
         justify-content: space-between;
     }
