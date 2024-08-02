@@ -19,6 +19,9 @@ h1,h2,h3,h4{
     /* gap: 30px; */
     justify-content: space-evenly;
 }
+.hero1{
+    flex-wrap: nowrap;
+}
 .hero-text h1{
     /* font-size: 48px; */
     font-weight: 900;
@@ -414,7 +417,6 @@ footer{
 @media screen and (max-width: 767px) {
     body{
         overflow-x: hidden;
-        width: 100%;
         margin: 0;
     }
     img {

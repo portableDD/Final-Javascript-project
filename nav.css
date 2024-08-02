@@ -251,8 +251,10 @@ button{
     .navContainer{
         padding: 0px 30px;
     }
+
     .navWidth {
-        justify-content: space-between;
+        width: 95%;
+        overflow-x: hidden;
     }
     .itemsDiv,
     .SignDiv {
