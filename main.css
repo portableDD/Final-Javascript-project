@@ -417,7 +417,7 @@ footer{
 @media screen and (max-width: 767px) {
     body{
         overflow-x: hidden;
-        margin: 0;
+        /* width: 100%; */
     }
     img {
         max-width: 100%;
